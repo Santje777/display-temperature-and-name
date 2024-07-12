@@ -26,3 +26,11 @@ def display_full_name(first_name, last_name, middle_name=""):
 
 name = display_full_name("Susanne", "Susanna", "van Oosterom")
 print("My full name is " + name)
+
+from rich import print
+
+from weather import Weather
+
+weather = Weather("Paris")
+weather.set_weather(27, "Sunny")
+weather.display_weather()
